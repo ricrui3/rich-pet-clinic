@@ -1,4 +1,4 @@
-package com.ricrui3.richpetclinic;
+package richpetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.ricrui3.richpetclinic.model;
+package model;
 
 public class PetType {
 

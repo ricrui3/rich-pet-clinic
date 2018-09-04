@@ -1,7 +1,6 @@
-package com.ricrui3.richpetclinic.model;
+package model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Pet {
 
