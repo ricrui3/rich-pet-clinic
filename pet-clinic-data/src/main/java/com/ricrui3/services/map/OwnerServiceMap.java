@@ -1,17 +1,16 @@
-package services.map;
+package com.ricrui3.services.map;
 
-import model.Pet;
-import services.CrudService;
+import com.ricrui3.model.Owner;
+import com.ricrui3.services.CrudService;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet,Long> {
-
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
     @Override
-    public Set<Pet> findAll() {
+    public Set<Owner> findAll() {
         return super.findAll();
     }
 
@@ -21,17 +20,17 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
     }
 
     @Override
-    public void delete(Pet object) {
+    public void delete(Owner object) {
         super.delete(object);
     }
 
     @Override
-    public Pet save(Pet object) {
+    public Owner save(Owner object) {
         return super.save(object.getId(), object);
     }
 
     @Override
-    public Pet findById(Long id) {
+    public Owner findById(Long id) {
         return super.findById(id);
     }
 }

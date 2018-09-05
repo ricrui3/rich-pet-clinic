@@ -1,4 +1,4 @@
-package model;
+package com.ricrui3.model;
 
 public class Person extends BaseEntity{
 

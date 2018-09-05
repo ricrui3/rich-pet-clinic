@@ -1,4 +1,4 @@
-package model;
+package com.ricrui3.model;
 
 import java.io.Serializable;
 

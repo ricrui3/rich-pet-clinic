@@ -1,6 +1,6 @@
-package services;
+package com.ricrui3.services;
 
-import model.Pet;
+import com.ricrui3.model.Pet;
 
 public interface PetService extends CrudService<Pet, Long>{
 }

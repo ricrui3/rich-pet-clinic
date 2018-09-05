@@ -1,4 +1,4 @@
-package services;
+package com.ricrui3.services;
 
 import java.util.Set;
 
