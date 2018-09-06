@@ -1,14 +1,14 @@
 package com.ricrui3.services.map;
 
 import com.ricrui3.model.Owner;
-import com.ricrui3.services.CrudService;
+import com.ricrui3.services.OwnerService;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -32,5 +32,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }

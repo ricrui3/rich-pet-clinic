@@ -1,14 +1,14 @@
 package com.ricrui3.services.map;
 
 import com.ricrui3.model.Pet;
-import com.ricrui3.services.CrudService;
+import com.ricrui3.services.PetService;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet,Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
