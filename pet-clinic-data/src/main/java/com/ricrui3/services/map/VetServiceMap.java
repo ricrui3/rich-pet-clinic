@@ -2,12 +2,14 @@ package com.ricrui3.services.map;
 
 import com.ricrui3.model.Vet;
 import com.ricrui3.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

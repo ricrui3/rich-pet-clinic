@@ -2,12 +2,14 @@ package com.ricrui3.services.map;
 
 import com.ricrui3.model.Pet;
 import com.ricrui3.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

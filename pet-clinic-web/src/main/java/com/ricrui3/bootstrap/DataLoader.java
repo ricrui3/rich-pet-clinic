@@ -4,8 +4,6 @@ import com.ricrui3.model.Owner;
 import com.ricrui3.model.Vet;
 import com.ricrui3.services.OwnerService;
 import com.ricrui3.services.VetService;
-import com.ricrui3.services.map.OwnerServiceMap;
-import com.ricrui3.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,9 +16,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

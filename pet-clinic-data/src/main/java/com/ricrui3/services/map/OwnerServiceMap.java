@@ -2,13 +2,16 @@ package com.ricrui3.services.map;
 
 import com.ricrui3.model.Owner;
 import com.ricrui3.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created By ricardo.ruiz
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
