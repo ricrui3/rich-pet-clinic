@@ -1,7 +1,6 @@
-package com.ricrui3.services.map;
+package com.ricrui3.services;
 
 import com.ricrui3.model.PetType;
-import com.ricrui3.services.CrudService;
 
 public interface PetTypeService extends CrudService<PetType, Long> {
 }

@@ -1,6 +1,7 @@
 package com.ricrui3.services.map;
 
 import com.ricrui3.model.PetType;
+import com.ricrui3.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -9,7 +10,7 @@ import java.util.Set;
  * Created By ricardo.ruiz
  */
 @Service
-public class PetTypeMapService extends AbstractMapService<PetType,Long> implements PetTypeService{
+public class PetTypeMapService extends AbstractMapService<PetType,Long> implements PetTypeService {
     @Override
     public Set<PetType> findAll() {
         return super.findAll();
